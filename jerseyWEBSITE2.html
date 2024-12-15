@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Predators Racing</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Century Gothic', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black Background */
+            color: #FFF; /* White Text */
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 20px 0;
+            color: #FF0000; /* Red Headline */
+            text-shadow: 3px 3px 10px #000;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #FFF;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        /* Section Styling */
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 12px rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Options Styling */
+        .options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .option {
+            flex: 1 1 calc(25% - 20px);
+            max-width: 200px;
+            text-align: center;
+            background: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .option:hover {
+            transform: scale(1.05);
+        }
+
+        .option img {
+            width: 100%;
+            height: auto;
+        }
+
+        .option p {
+            margin: 10px 0;
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        /* Form Elements */
+        textarea, input, button {
+            margin-top: 10px;
+            width: 80%;
+            max-width: 600px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            background: #444;
+            color: #FFF;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #FFD700;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <h1>TEAM PREDATORS RACING</h1>
+    <form action="https://formspree.io/f/xvovgnzq" method="POST">
+        <section>
+            <h2>Your Email</h2>
+            <input type="email" name="user_email" placeholder="Enter your email" required>
+        </section>
+
+        <section>
+            <h2>1. T-Shirts</h2>
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" name="tshirts[]" value="T-Shirt 1" id="tshirt1">
+                    <label for="tshirt1">
+                        <img src="https://i.imgur.com/0IQyPcr.jpg" alt="T-Shirt 1">
+                        <p>T-Shirt 1</p>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="tshirts[]" value="T-Shirt 2" id="tshirt2">
+                    <label for="tshirt2">
+                        <img src="https://i.imgur.com/A7wkJz6.jpg" alt="T-Shirt 2">
+                        <p>T-Shirt 2</p>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="tshirts[]" value="T-Shirt 3" id="tshirt3">
+                    <label for="tshirt3">
+                        <img src="https://i.imgur.com/g9jmFsS.jpg" alt="T-Shirt 3">
+                        <p>T-Shirt 3</p>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="tshirts[]" value="T-Shirt 4" id="tshirt4">
+                    <label for="tshirt4">
+                        <img src="https://i.imgur.com/dlsHyL2.jpg" alt="T-Shirt 4">
+                        <p>T-Shirt 4</p>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="tshirts[]" value="T-Shirt 5" id="tshirt5">
+                    <label for="tshirt5">
+                        <img src="https://i.imgur.com/YnB6qTr.jpg" alt="T-Shirt 5">
+                        <p>T-Shirt 5</p>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Jackets</h2>
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" name="jackets[]" value="Jacket 1" id="jacket1">
+                    <label for="jacket1">
+                        <img src="https://i.imgur.com/WFVSEwb.jpg" alt="Jacket 1">
+                        <p>Jacket 1</p>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="jackets[]" value="Jacket 2" id="jacket2">
+                    <label for="jacket2">
+                        <img src="https://i.imgur.com/Gc0oNFb.jpg" alt="Jacket 2">
+                        <p>Jacket 2</p>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="jackets[]" value="Jacket 3" id="jacket3">
+                    <label for="jacket3">
+                        <img src="https://i.imgur.com/4fHzBcw.jpg" alt="Jacket 3">
+                        <p>Jacket 3</p>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Leave a Review</h2>
+            <textarea name="review" rows="4" cols="50" placeholder="Write your feedback here..."></textarea>
+        </section>
+
+        <footer>
+            <button type="submit">Submit</button>
+        </footer>
+    </form>
+</body>
+</html>
